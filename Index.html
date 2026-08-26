@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kevin Backlund | Portfolio</title>
+    <link rel="stylesheet" href="Assets/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="#home" class="brand">Kevin Backlund</a>
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div>
+            <h1>Game Programmer</h1>
+            <p class="lead">
+              I am a Game Programmer experienced with C++ and C#. I have mainly worked with Unreal Engine and Unity, creating gameplay systems, prototypes, and polished project experiences.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn">View Projects</a>
+              <a href="#about" class="secondary-btn">About Me</a>
+            </div>
+          </div>
+
+          <div class="profile-card">
+            <div class="profile-box">
+              <div class="profile-photo-frame" aria-label="Professional portrait placeholder">
+                <img
+                  src="Assets/Personalphoto.jpg"
+                  alt="Kevin Backlund portrait"
+                  onerror="this.style.display='none'; this.parentElement.classList.add('photo-missing');"
+                />
+                <span class="photo-placeholder">Professional Photo</span>
+              </div>
+              <h2>Kevin Backlund</h2>
+            </div>
+            <div class="stat-grid">
+              <div class="stat">3+ Game Projects</div>
+              <div class="stat">C++ & C#</div>
+              <div class="stat">Unreal 
+                & Unity</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <div class="section-title">About Me</div>
+          <p class="section-subtitle">
+            I enjoy building game experiences that combine clear design, solid technical implementation, and strong collaboration with creative teams.
+          </p>
+
+          <div class="about-grid">
+            <div class="card">
+              <h3>Who I am</h3>
+              <p>
+                I am a game programmer focused on creating engaging mechanics and systems across both Unreal Engine and Unity. My work spans gameplay implementation, prototyping, and developing projects that balance fun with strong technical execution.
+              </p>
+            </div>
+
+            <div class="card" id="skills">
+              <h3>Core Skills</h3>
+              <div class="skills-wrap">
+                <span class="skill">C++</span>
+                <span class="skill">C#</span>
+                <span class="skill">Unity</span>
+                <span class="skill">Unreal</span>
+                <span class="skill">Gameplay Programming</span>
+                <span class="skill">System Design</span>
+                <span class="skill">Prototyping</span>
+                <span class="skill">Team Collaboration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <div class="section-title">Featured Projects</div>
+          <p class="section-subtitle">
+            The game projects I have worked on.
+          </p>
+
+          <div class="projects-grid">
+            <article class="project-card" role="link" tabindex="0" aria-label="View details about Catsmith" onclick="window.location.href='Catsmith.html';" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); window.location.href='Catsmith.html'; }">
+              <div class="project-visual">
+                <img src="Assets/Catsmith.png" alt="Catsmith project preview" onerror="this.style.display='none'; this.parentElement.classList.add('has-image'); this.parentElement.querySelector('.image-placeholder').style.display='flex';" />
+                <div class="image-placeholder">Add Catsmith image</div>
+              </div>
+              <div class="project-content">
+                <h3>Catsmith</h3>
+                <p>
+                  Catsmith is a local co-op crafting game where two mischievous cat apprentices train under the watchful eye of Master Kitshu, a legendary blacksmith. Work together to manage a bustling forge, fulfill customer commissions, and master the rhythm of crafting through communication, coordination, and teamwork.
+                </p>
+                <div class="tech">
+                  <span class="tag">Unreal</span>
+                  <span class="tag">Local Co-op</span>
+                </div>
+                <div class="project-links">
+                  <a class="btn small-btn" href="https://futuregames.itch.io/catsmith" target="_blank" rel="noreferrer">Itch.io</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" role="link" tabindex="0" aria-label="View details about Domefall" onclick="window.location.href='Domefall.html';" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); window.location.href='Domefall.html'; }">
+              <div class="project-visual">
+                <img src="Assets/Domefall.png" alt="Domefall project preview" onerror="this.style.display='none'; this.parentElement.classList.add('has-image'); this.parentElement.querySelector('.image-placeholder').style.display='flex';" />
+                <div class="image-placeholder">Add Domefall image</div>
+              </div>
+              <div class="project-content">
+                <h3>Domefall</h3>
+                <p>
+                  Domefall is a game about the evolutionary race between man and machine. Robots have destroyed almost all of humanity, leaving only ruins all around. And now, as the player, you must lead the remnants of humanity. Do what machines allowed us to do—evolve faster than them!
+                </p>
+                <div class="tech">
+                  <span class="tag">Unity</span>
+                  <span class="tag">Mobile game</span>
+                </div>
+                <div class="project-links">
+                  <a class="btn small-btn" href="https://futuregames.itch.io/domefall" target="_blank" rel="noreferrer">Itch.io</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" role="link" tabindex="0" aria-label="View details about Loki: Through Yggdrasil" onclick="window.location.href='Loki.html';" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); window.location.href='Loki.html'; }">
+              <div class="project-visual">
+                <img src="Assets/loki.png" alt="Loki Through Yggdrasil project preview" onerror="this.style.display='none'; this.parentElement.classList.add('has-image'); this.parentElement.querySelector('.image-placeholder').style.display='flex';" />
+                <div class="image-placeholder">Add Loki image</div>
+              </div>
+              <div class="project-content">
+                <h3>Loki: Through Yggdrasil</h3>
+                <p>
+                  You play as Loki, a mischievous and magical character, falling through the stem of Yggdrasil, the world tree. The goal of the game is to fall as far as possible while dodging obstacles and using Loki's unique abilities. Once you hit an obstacle, the game is over and you get a final score based on how deep you've traveled.
+                </p>
+                <div class="tech">
+                  <span class="tag">Unity</span>
+                  <span class="tag">Arcade</span>
+                </div>
+                <div class="project-links">
+                  <a class="btn small-btn" href="https://futuregames.itch.io/loki-through-yggdrasil" target="_blank" rel="noreferrer">Itch.io</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <div class="section-title">Let's Connect</div>
+          <p class="section-subtitle">
+            Open to collaboration, game development opportunities, and creative projects.
+          </p>
+
+          <div class="contact-grid">
+            <div class="card">
+              <h3>Contact Details</h3>
+              <ul class="contact-list">
+                <li><strong>Email:</strong> Kebacklund@gmail.com</li>
+                <li><strong>Location:</strong> Umeå, Sweden</li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/KevinBacklund" target="_blank" rel="noreferrer">https://github.com/KevinBacklund</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kevin-backlund-3239583b1/" target="_blank" rel="noreferrer">https://www.linkedin.com/in/kevin-backlund-3239583b1/</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+  </body>
+</html>
