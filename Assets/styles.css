@@ -281,6 +281,10 @@ section {
   font-size: 1.3rem;
 }
 
+.about-grid .card p + p {
+  margin-top: 1rem;
+}
+
 .skills-wrap {
   display: flex;
   flex-wrap: wrap;
